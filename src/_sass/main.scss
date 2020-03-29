@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@import './tokens/color.yaml';
+
+body {
+  color: map-get($color-map, 'button-background');
+  user-select: none;
+  overflow: auto;
+  transition: all 0.5s;
+  display: grid;
+  flex: 1 0 0;
+}

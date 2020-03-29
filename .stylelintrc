@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "stylelint-prettier",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "no-descending-specificity": null,
+    "block-opening-brace-space-before": null,
+    "declaration-colon-newline-after": null,
+    "function-name-case": null,
+    "scss/at-rule-no-unknown": null,
+    "selector-combinator-space-before": null,
+    "selector-descendant-combinator-no-non-space": null,
+    "selector-pseudo-element-colon-notation": "single",
+    "value-list-comma-newline-after": null
+  },
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-recommended-scss"
+  ]
+}

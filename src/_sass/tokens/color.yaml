@@ -1,0 +1,8 @@
+props:
+  button_background:
+    value: '{!primary_color}'
+imports:
+  - ./_global-color.yaml
+global:
+  type: color
+  category: buttons

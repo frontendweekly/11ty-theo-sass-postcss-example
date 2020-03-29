@@ -1,0 +1,62 @@
+{
+  "name": "11ty-theo-sass-postcss-example",
+  "version": "0.0.0",
+  "description": "This is an example for Eleventy to use Theo, Sass and postcss(autoprefixer)",
+  "scripts": {
+    "build": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:clean": "rimraf dist/*",
+    "build:minify:css": "cross-env NODE_ENV=production postcss src/_includes/assets/styles/main.css -o src/_includes/assets/styles/main.css",
+    "build:sass": "cross-env ELEVENTY_ENV=production node src/_sass/sass.11ty.js",
+    "build:css": "run-s build:sass build:minify:css",
+    "dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "start": "npm run dev"
+  },
+  "author": "Yuya Saito <hello@studiomohawk.com> (https://github.com/studiomohawk)",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "autoprefixer": "^9.7.5",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "postcss-load-config": "^2.1.0",
+    "sass": "^1.26.3",
+    "theo": "^8.1.5",
+    "node-sass": "^4.13.1",
+    "rimraf": "^3.0.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "arg": "^4.1.3",
+    "cross-env": "^7.0.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.9",
+    "prettier": "^2.0.2",
+    "stylelint": "^13.2.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.16.0"
+  },
+  "browserslist": [
+    "defaults",
+    "IE 11",
+    "not IE_Mob 11"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,pcss,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{pcss}": [
+      "stylelint --fix",
+      "git add"
+    ]
+  }
+}
