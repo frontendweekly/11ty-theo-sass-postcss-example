@@ -58,5 +58,20 @@
       "stylelint --fix",
       "git add"
     ]
-  }
+  },
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontendweekly/11ty-theo-sass-postcss-example.git"
+  },
+  "keywords": [
+    "eleventy",
+    "theo",
+    "sass",
+    "postcss"
+  ],
+  "bugs": {
+    "url": "https://github.com/frontendweekly/11ty-theo-sass-postcss-example/issues"
+  },
+  "homepage": "https://github.com/frontendweekly/11ty-theo-sass-postcss-example#readme"
 }
