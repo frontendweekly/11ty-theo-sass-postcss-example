@@ -1,6 +1,7 @@
 # Eleventy: Theo, Sass and PostCSS Example
 
 This is an example repo for Eleventy to use Theo, Sass and PostCSS(Autoprefixer and cssnano).
+I've have an [article on Virga](https://virga.frontendweekly.tokyo/posts/2020-03-29-eleventy-with-theo-sass-and-postcss/) to explain how this works.
 
 ## Colophons
 
