@@ -1,7 +1,7 @@
 {
   "name": "11ty-theo-sass-postcss-example",
   "version": "0.0.0",
-  "description": "This is an example for Eleventy to use Theo, Sass and postcss(autoprefixer)",
+  "description": "This is an example for Eleventy to use Theo, Sass and postcss(autoprefixer and cssnano)",
   "scripts": {
     "build": "cross-env ELEVENTY_ENV=production eleventy",
     "build:clean": "rimraf dist/*",
