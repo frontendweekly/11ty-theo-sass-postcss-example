@@ -48,13 +48,11 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,pcss,md}": [
-      "prettier --write",
-      "git add"
+    "*.{js,json,scss,yaml,md}": [
+      "prettier --write"
     ],
-    "*.{pcss}": [
-      "stylelint --fix",
-      "git add"
+    "*.{scss}": [
+      "stylelint --fix"
     ]
   },
   "main": ".eleventy.js",
